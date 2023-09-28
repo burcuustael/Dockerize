@@ -10,13 +10,7 @@ namespace AspNetCoreMvc.Pages
 {
     public class HomeModel : PageModel
     {
-        private readonly IFileProvider _fileProvider;
-
-        public HomeModel(IFileProvider fileProvider)
-        {
-            _fileProvider = fileProvider;
-        }
-
+  
         public IActionResult OnGet()
         {
             return Page();
